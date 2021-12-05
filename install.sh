@@ -1,9 +1,11 @@
+curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+
 apt-get update
 apt-get upgrade
 
 sudo apt-get install --no-install-recommends \
 xserver-xorg x11-xserver-utils xinit openbox \
-libgtk-3-0 chromium-browser
+libgtk-3-0 chromium-browser nodejs
 
 cat scripts/autostart > /etc/xdg/openbox/autostart
 
